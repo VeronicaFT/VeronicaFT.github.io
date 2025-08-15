@@ -19,6 +19,7 @@ header {
 
 /* Marco para la foto */
 .foto-perfil {
+    background-image: url('fotoperfil.jpg');
     width: 120px;
     height: 120px;
     background-color: #f0f0f0;
