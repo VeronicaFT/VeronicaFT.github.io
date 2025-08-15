@@ -1,0 +1,54 @@
+/* ======== Estilos generales ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcf6;
+    color: #1b3a2a;
+    line-height: 1.6;
+}
+
+/* ======== Cabecera ======== */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ======== Títulos ======== */
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+/* ======== Contenido principal ======== */
+main {
+    padding: 20px;
+}
+
+/* ======== Secciones ======== */
+section {
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ======== Enlaces ======== */
+a {
+    color: #ffb300;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ======== Pie de página ======== */
+footer {
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+}
