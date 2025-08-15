@@ -32,6 +32,12 @@ header {
     float: left;
 }
 
+ .perfil-contenedor::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* ======== Títulos ======== */
 h1, h2 {
     margin: 0 0 10px;
