@@ -3,48 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio en Construcción</title>
-
-    <!-- Fuente profesional -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS externo -->
+    <title>Verónica FT | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Fondo orgánico SVG -->
+    <div class="blobs-bg">
+        <svg viewBox="0 0 800 400" width="100%" height="400px" style="position: absolute; left:0; top:0;">
+            <ellipse cx="130" cy="90" rx="120" ry="60" fill="#43cea2" opacity="0.2"/>
+            <ellipse cx="700" cy="300" rx="140" ry="70" fill="#f7971e" opacity="0.18"/>
+        </svg>
+    </div>
     <header>
+        <h1>Verónica FT <span class="wave">👋</span></h1>
+        <p class="subtitulo">Desarrolladora Web Junior</p>
         <div class="perfil-contenedor">
             <div class="foto-perfil"></div>
-            <div class="info-perfil">
-                <h1>Hola, soy Verónica 👋</h1>
-                <p>Desarrolladora de Aplicaciones Web</p>
+            <div>
+                <p>¡Bienvenida a mi espacio digital! Me apasiona el desarrollo web y la tecnología.  Siempre dispuesta a aprender cosas nuevas.</p>
+                <a href="#contacto" class="btn">Contáctame</a>
             </div>
         </div>
     </header>
-
     <main>
         <section>
-            <h2>Sobre mí</h2>
-            <p>Apasionada del desarrollo web y de la tecnología. Siempre dispuesta a aprender cosas nuevas.</p>
+            <h2>🚀 Proyectos Destacados</h2>
+            <ul class="proyectos">
+                <li>
+                    <span class="icon">🌈</span>
+                    <a href="#">Landing Creativa</a>
+                    <span class="tag nuevo">Nuevo</span>
+                </li>
+                <li>
+                    <span class="icon">🦄</span>
+                    <a href="#">App de Animaciones</a>
+                </li>
+                <li>
+                    <span class="icon">🎨</span>
+                    <a href="#">Portfolio Interactivo</a>
+                </li>
+            </ul>
         </section>
-
         <section>
-            <h2>Proyectos</h2>
-            <p>🚧 Actualmente en construcción 🚧</p>
+            <h2>💡 Sobre Mí</h2>
+            <p>
+                Me especializo en ...            </p>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3 Animado</li>
+                <li>JavaScript</li>
+                <li>Angular</li>
+                <li>Java</li>
+            </ul>
         </section>
-
-        <section>
-            <h2>Contacto</h2>
-            <p>Email: <a href="mailto:veronicaft90@gmail.com">veronicaft90@gmail.com</a></p>
-            <p>Linkedin: <a href="https://www.linkedin.com/in/veronicaflorestorralva/" target="_blank"> Más sobre mí aquí</a><p>
-            <p>GitHub: <a href="https://github.com/VeronicaFT" target="_blank">Mi perfil</a></p>
+        <section id="contacto">
+            <h2>📬 Contacto</h2>
+            <p>¿Te gustaría trabajar conmigo? ¡Escríbeme!</p>
+            <a href="mailto:veronicaft90@gmail.com" class="btn">Enviar Email</a>
+            <div class="social">
+                <a href="https://github.com/VeronicaFT" target="_blank">🐙 GitHub</a>
+                <a href="#">💼 LinkedIn</a>
+                <a href="#">🌐 Web Personal</a>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>© 2025 Verónica - Portfolio</p>
+        <span>© 2025 Verónica FT | Portfolio</span>
     </footer>
-
 </body>
 </html>
