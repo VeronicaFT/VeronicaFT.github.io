@@ -1,3 +1,4 @@
+/* Estilos generales de la página */
 body {
     font-family: 'Quicksand', 'Poppins', sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Fondo SVG de blobs */
 .blobs-bg {
     position: absolute;
     top: 0; left: 0;
@@ -22,6 +24,7 @@ body {
     display: block;
 }
 
+/* ENCABEZADO */
 header {
     padding: 48px 0 30px 0;
     text-align: center;
@@ -29,22 +32,25 @@ header {
     position: relative;
 }
 
+/* Título principal */
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
-    color: #43cea2;
+    color: #43cea2; /* Verde */
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 0.2em;
     display: inline-block;
-    animation: pop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+    animation: pop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1; /* Animación de entrada */
 }
+/* Animación de aparición */
 @keyframes pop {
     0% { transform: scale(0.8); opacity: 0; }
     60% { transform: scale(1.1); opacity: 1; }
     100% { transform: scale(1); }
 }
 
+/* Mano saludando */
 .wave {
     animation: wave 2s infinite;
     display: inline-block;
@@ -59,27 +65,30 @@ h1 {
     100% { transform: rotate(0deg);}
 }
 
+/* Subtítulo */
 .subtitulo {
     font-size: 1.4em;
-    color: #185a9d;
+    color: #185a9d;  /* Azul */
     margin-bottom: 24px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
+/* Contenedor de presentación */
 .perfil-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     margin-bottom: 34px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
     margin-top: 18px;
 }
 
+/* Foto de perfil circular */
 .foto-perfil {
-    background-image: url('fotoperfil.jpg');
+    background-image: url('fotoperfil.jpg');  /* Aquí se cambia la foto */
     width: 190px;
     height: 190px;
     background-color: #fff;
@@ -89,7 +98,7 @@ h1 {
     background-position: center;
     box-shadow: 0 6px 24px rgba(67,206,162,0.22);
     transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
-    animation: float 2.5s infinite ease-in-out alternate;
+    animation: float 2.5s infinite ease-in-out alternate; /* Efecto flotante */
 }
 @keyframes float {
     0% { transform: translateY(0);}
@@ -100,6 +109,7 @@ h1 {
     box-shadow: 0 12px 32px rgba(67,206,162,0.33);
 }
 
+/* Botones generales */
 .btn {
     background: linear-gradient(90deg, #43cea2 0%, #f7971e 100%);
     color: #fff;
@@ -122,15 +132,17 @@ h1 {
     box-shadow: 0 6px 24px rgba(67,206,162,0.33);
 }
 
+/* CONTENIDO PRINCIPAL */
 main {
     padding: 36px 10px;
     max-width: 900px;
     margin: auto;
 }
 
+/* Secciones generales */
 section {
     margin-bottom: 38px;
-    background: rgba(255,255,255,0.98);
+    background: rgba(255,255,255,0.98); /* Caja blanca semiopaca */
     padding: 28px;
     border-radius: 24px;
     box-shadow: 0px 6px 22px rgba(67,206,162,0.08), 0 2.5px 13px rgba(185,90,157,0.08);
@@ -141,8 +153,9 @@ section:hover {
     transform: translateY(-4px) scale(1.01);
 }
 
+/* Títulos de sección */
 h2 {
-    color: #f7971e;
+    color: #f7971e; /* Naranja */
     font-size: 2em;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -150,6 +163,7 @@ h2 {
     margin-top: 0;
 }
 
+/* Lista de proyectos */
 .proyectos {
     list-style: none;
     padding: 0;
@@ -175,9 +189,10 @@ h2 {
     font-weight: 500;
 }
 .proyectos .nuevo {
-    background: #f7971e;
+    background: #f7971e; /* Naranja para destacar */
 }
 
+/* Lista de skills */
 .skills {
     display: flex;
     gap: 14px;
@@ -198,6 +213,7 @@ h2 {
     box-shadow: 0 2px 6px rgba(67,206,162,0.13);
 }
 
+/* Redes sociales */
 .social {
     margin-top: 18px;
     display: flex;
@@ -220,6 +236,7 @@ h2 {
     transform: scale(1.08);
 }
 
+/* Pie de página */
 footer {
     text-align: center;
     background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
@@ -231,6 +248,7 @@ footer {
     position: relative;
 }
 
+/*Ajustes para pantallas pequeñas */
 @media (max-width: 700px) {
     .perfil-contenedor {
         flex-direction: column;
